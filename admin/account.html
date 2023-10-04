@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ThriveNow Telneting || Courses Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconsax.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <div class="p-4 pt-5">
+                <h1><a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="d-flex align-items-center">
+                        <object class="icon" data="images/home.svg" type="image/svg+xml"></object>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="mobileDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/mobile.svg" type="image/svg+xml"></object>
+                            Mobile utilities
+                            <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="mobileDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="airtime.html">
+                                <object class="icon" data="images/call.svg" type="image/svg+xml"></object>
+                                Airtime top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="data.html">
+                                <object class="icon" data="images/wifi-square.svg" type="image/svg+xml"></object>
+                                Data top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="recharge.html">
+                                <object class="icon" data="images/hashtag.svg" type="image/svg+xml"></object>
+                                Recharge PIN
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="homeDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/electricity.svg" type="image/svg+xml"></object>
+                            Home utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="cable.html">
+                                <object class="icon" data="images/monitor-mobbile.svg" type="image/svg+xml"></object>
+                                Cable TV
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="electricity.html">
+                                <object class="icon" data="images/flash.svg" type="image/svg+xml"></object>
+                                Electricity Bills
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="educationDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/teacher.svg" type="image/svg+xml"></object>
+                            Education utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="result.html">
+                                <object class="icon" data="images/award.svg" type="image/svg+xml"></object>
+                                Result Checker
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="courses.html">
+                            <object class="icon" data="images/video-octagon.svg" type="image/svg+xml"></object>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link d-flex align-items-center" href="account.html">
+                            <object class="icon" data="images/profile-circle.svg" type="image/svg+xml"></object>
+                            My Account
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mb-5">
+                    <img src="images/customer.png" alt="customer">
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="d-flex justify-content-end">
+                <div class="top">
+                    &nbsp;
+                </div>
+            </div>
+
+
+            <div class="settings">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="title">My Account</h1>
+                        <h4 class="subtitle">Emmanuel Yusuf</h4>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="avatar ms-2">
+                                <div class="icon">E</div>
+                            </div>
+
+                            <div class="upload-btn-wrapper ms-2">
+                                <button class="btn btn-outline">Upload picture</button>
+                                <input type="file" name="profile" id="profile">
+                            </div>
+
+                            <button class="btn btn-text">Remove</button>
+                        </div>
+
+
+                        <div class="nav-wrapper">
+                            <nav class="nav flex-column" aria-orientation="vertical">
+                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#" id="nav-settings-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-settings" type="button" role="tab" aria-controls="nav-settings"
+                                    aria-selected="true">
+                                    <img src="images/user-square.svg" alt="user-square" class="icon-tab">
+                                    Account settings
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-statement-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-statement" type="button" role="tab" aria-controls="nav-statement"
+                                    aria-selected="true">
+                                    <img src="images/document-text.svg" alt="document" class="icon-tab">
+                                    Account statement
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-password-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-password" type="button" role="tab" aria-controls="nav-password"
+                                    aria-selected="true">
+                                    <img src="images/key-square.svg" alt="key-square" class="icon-tab">
+                                    Change password
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-pin-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-pin" type="button" role="tab" aria-controls="nav-pin"
+                                    aria-selected="true">
+                                    <img src="images/lock.svg" alt="user-square" class="icon-tab">
+                                    Change PIN
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-phone-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-phone" type="button" role="tab" aria-controls="nav-phone"
+                                    aria-selected="true">
+                                    <img src="images/mobile.svg" alt="user-square" class="icon-tab">
+                                    Change phone number
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-earn-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-earn" type="button" role="tab" aria-controls="nav-earn"
+                                    aria-selected="true">
+                                    <img src="images/share.svg" alt="user-square" class="icon-tab">
+                                    Refer & Earn
+                                </a>
+                            
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#" id="nav-contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="true">
+                                    <img src="images/message-favorite.svg" alt="user-square" class="icon-tab">
+                                    Contact us
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-settings" role="tabpanel"
+                                aria-labelledby="nav-settings-tab" tabindex="0">
+                                <div class="card">
+                                    <h1 class="title text-center">Account details</h1>
+
+                                    <form action="#" class="mt-4">
+                                        <div class="form-group">
+                                            <label>First name</label>
+                                            <input type="text" name="first-name" value="Emmanuel" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Last name</label>
+                                            <input type="text" name="last-name" value="Yusuf" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="text" name="user-name" value="@emmayusuf" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" name="email" value="emma@mail.com" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Phone number</label>
+                                            <input type="number" name="phone-no" value="0812838932"
+                                                class="form-control">
+                                        </div>
+
+                                        <input type="submit" value="Save Changes"
+                                            class="mt-4 btn btn-primary w-100 py-3">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-statement" role="tabpanel"
+                                aria-labelledby="nav-statement-tab" tabindex="0">
+                                <div class="card">
+                                    <h1 class="title text-center">Account statement</h1>
+
+                                    <form action="#" class="mt-4">
+                                        <div class="form-group">
+                                            <label>Start date</label>
+                                            <input type="date" name="start-date" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>End data</label>
+                                            <input type="date" name="end-date" class="form-control">
+                                        </div>
+
+                                        <input type="submit" value="Download" class="mt-4 btn btn-primary w-100 py-3">
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade show" id="nav-password" role="tabpanel"
+                                aria-labelledby="nav-password-tab" tabindex="0">
+                                <div class="card">
+                                    <h1 class="title text-center">Change password</h1>
+
+                                    <form action="#" class="mt-4">
+                                        <div class="form-group">
+                                            <label>Old password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>New password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Confirm password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+
+                                        <h6>Password requirement</h6>
+                                        <ul>
+                                            <li>At least one special character</li>
+                                            <li>Minimum 8 characters</li>
+                                        </ul>
+
+                                        <input type="submit" value="Update password"
+                                            class="mt-4 btn btn-primary w-100 py-3">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-pin" role="tabpanel" aria-labelledby="nav-pin-tab"
+                                tabindex="0">
+                                <div class="card" id="old-pin">
+                                    <h1 class="title text-center">Change PIN</h1>
+
+                                    <form action="#" class="mt-4">
+                                        <h5 class="text-center">Enter your old Telneting PIN</h5>
+
+                                        <div class="number-input">
+                                            <input type="text" maxlength="1" id="box1">
+                                            <input type="text" maxlength="1" id="box2">
+                                            <input type="text" maxlength="1" id="box3">
+                                            <input type="text" maxlength="1" id="box4">
+                                        </div>
+
+                                        <h5 class="text-center">Forgot your old PIN? <span class="text-primary" id="reset-btn" style="cursor: pointer">Reset here.</span></h5>
+
+                                        <button type="button" id="next-btn" class="mt-4 btn btn-primary w-100 py-3">Next</button>
+                                    </form>
+                                </div>
+
+                                <div class="card" id="new-pin">
+                                    <i class="fa-solid fa-chevron-left" id="prev-btn"></i>
+                                    <h1 class="title text-center">Create your Telneting PIN</h1>
+
+                                    <form action="#" class="mt-4">
+                                        <h5 class="text-center">Enter your old Telneting PIN</h5>
+
+                                        <div class="number-input">
+                                            <input type="text" maxlength="1" id="box1">
+                                            <input type="text" maxlength="1" id="box2">
+                                            <input type="text" maxlength="1" id="box3">
+                                            <input type="text" maxlength="1" id="box4">
+                                        </div>
+
+                                        <h5 class="text-center">Enter your new Telneting PIN</h5>
+
+                                        <div class="number2-input">
+                                            <input type="text" maxlength="1" id="box1">
+                                            <input type="text" maxlength="1" id="box2">
+                                            <input type="text" maxlength="1" id="box3">
+                                            <input type="text" maxlength="1" id="box4">
+                                        </div>
+
+                                        <button type="button" id="pin-change-btn" class="mt-4 btn btn-primary w-100 py-3">Submit</button>
+                                    </form>
+                                </div>
+
+                                <div class="card text-center" id="pin-success">
+                                    <img src="images/icon-success.png" alt="success" class="w-25 d-inline-block mx-auto mb-4">
+
+                                    <h4>You have successfully changed your PIN</h4>
+                                </div>
+
+                                <div class="card" id="reset-pin">
+                                    <h1 class="title text-center">Reset your Telneting PIN</h1>
+
+                                    <p class="text-center">A code has been sent to the phone number on your account <br class="d-none d-md-block" /> to confirm this change.</p>
+                                    <div class="form-group">
+                                        <label>Verification code</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+
+                                    <a href="#" class="btn-text text-primary text-center mt-2">Resend code</a>
+
+                                    <button type="button" id="verification-btn" class="mt-4 btn btn-primary w-100 py-3">Submit</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-phone" role="tabpanel" aria-labelledby="nav-phone-tab" tabindex="0">
+                                <div class="card" id="input-phone">
+                                    <h1 class="title text-center">Change Phone Number</h1>
+                            
+                                    <form action="#" class="mt-4">
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input type="number" class="form-control">
+                                        </div>
+                            
+                                        <button type="submit" id="change-phone-btn" class="mt-4 btn btn-primary w-100 py-3">Next</button>
+                                    </form>
+                                </div>
+
+                                <div class="card text-center" id="change-phone">
+                                    <h1 class="title text-center">Change Phone Number</h1>
+
+                                    <img src="images/lock-circle.png" alt="circle" class="mt-4 w-25 d-inline-block mx-auto mb-2">
+
+                                    <p class="text-center">Enter your 4-digit Telneting PIN <br /> to change your phone number.</p>
+                                    <form action="#">
+                                        <div class="number-input">
+                                            <input type="text" maxlength="1" id="box1">
+                                            <input type="text" maxlength="1" id="box2">
+                                            <input type="text" maxlength="1" id="box3">
+                                            <input type="text" maxlength="1" id="box4">
+                                        </div>
+
+                                        <button type="submit" id="phone-success-btn" class="mt-4 btn btn-primary w-100 py-3">Confirm</button>
+                                    </form>
+                                </div>
+
+                                <div class="card text-center" id="phone-success">
+                                    <img src="images/icon-success.png" alt="success" class="w-25 d-inline-block mx-auto mb-4">
+                                
+                                    <h4>You have successfully changed your Phone number</h4>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-earn" role="tabpanel" aria-labelledby="nav-earn-tab" tabindex="0">
+                                <div class="card text-center">
+                                    <h1 class="title text-center">Refer & Earn</h1>
+                            
+                                    <img src="images/telcoin.png" alt="telcoin" class="mx-auto w-25 mt-4 mb-2">
+                                    <h4>Get free Telcoin</h4>
+
+                                    <p>
+                                        Enjoy free Telcoin every time someone signs up with your referral code, you also get bonus coins every time the user
+                                        performs a transaction
+                                    </p>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="images/info-circle.svg" alt="info" class="me-2 d-inline-block">
+                                        <h5 class="font-semibold text-primary">Read Terms and Condition</h5>
+                                    </div>
+
+                                    <div class="w-25 mt-4 mx-auto d-flex align-items-center justify-content-between">
+                                        <img src="images/whatsapp.png" alt="whatsapp">
+                                        <img src="images/twitter.png" alt="twitter">
+                                        <img src="images/facebook.png" alt="facebook">
+                                    </div>
+
+                                    <div class="w-50 mt-3 mx-auto">
+                                        <div class="row align-items-center">
+                                            <div class="col-9">
+                                                <span class="py-2 px-1" style="border: 1px solid #969696; border-radius: 8px;" id="copy-link">https:/telneting.com/regist</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="opaque-btn py-2" type="button" id="copy-button">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="text-primary" style="font-weight: 600; margin-top: 100px"><a href="referral.html">View Referral Performance</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                <div class="card px-0">
+                                    <img src="images/contact.png" alt="contact" class="contact-img">
+                                    <h1 class="title text-center">Contact us</h1>
+                            
+                                    <div class="mt-3">
+                                        <div class="d-flex align-items-center contact-card">
+                                            <img src="images/whatsapp.png" alt="whatsapp" class="me-2">
+                                            <p>Join our whatsapp community</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center contact-card">
+                                            <img src="images/twitter.png" alt="twitter" class="me-2">
+                                            <p>Twitter page</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center contact-card">
+                                            <img src="images/facebook.png" alt="facebook" class="me-2">
+                                            <p>Facebook</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center contact-card">
+                                            <img src="images/instagram.png" alt="instagram" class="me-2">
+                                            <p>Instagram page</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> -->
+    <script src="js/main.js"></script>
+    
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <script>
+        const inputBoxes = document.querySelectorAll('.number-input input');
+        const inputBoxes2 = document.querySelectorAll('.number2-input input');
+
+        inputBoxes.forEach((box, index) => {
+            box.addEventListener('input', (e) => {
+                if (e.target.value.length > 1) {
+                    e.target.value = e.target.value.slice(0, 1);
+                }
+
+                if (index < inputBoxes.length - 1 && e.target.value !== '') {
+                    inputBoxes[index + 1].focus();
+                }
+            });
+
+            box.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value === '' && index > 0) {
+                    inputBoxes[index - 1].focus();
+                }
+            });
+        });
+
+        inputBoxes2.forEach((box, index) => {
+            box.addEventListener('input', (e) => {
+                if (e.target.value.length > 1) {
+                    e.target.value = e.target.value.slice(0, 1);
+                }
+
+                if (index < inputBoxes2.length - 1 && e.target.value !== '') {
+                    inputBoxes2[index + 1].focus();
+                }
+            });
+
+            box.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value === '' && index > 0) {
+                    inputBoxes2[index - 1].focus();
+                }
+            });
+        });
+
+
+        // Get references to the button and card elements
+            const nextButton = document.getElementById('next-btn');
+            const pinChangeButton = document.getElementById('pin-change-btn');
+            const prevButton = document.getElementById('prev-btn');
+            const verButton = document.getElementById('verification-btn');
+            const resetButton = document.getElementById('reset-btn');
+            const phoneSuccessButton = document.getElementById('phone-success-btn');
+            const changePhoneButton = document.getElementById('change-phone-btn');
+
+
+            const oldPinCard = document.getElementById('old-pin');
+            const newPinCard = document.getElementById('new-pin');
+            const pinSuccessCard = document.getElementById('pin-success');
+            const phoneSuccessCard = document.getElementById('phone-success');
+            const resetPinCard = document.getElementById('reset-pin');
+            const changePhoneCard = document.getElementById('change-phone');
+            const inputPhoneCard = document.getElementById('input-phone');
+
+            // Add a click event listener to the button
+            nextButton.addEventListener('click', function () {
+               newPinCard.style.display = 'block'
+               oldPinCard.style.display = 'none'
+            });
+
+            prevButton.addEventListener('click', function () {
+                if (oldPinCard.style.display === 'block') {
+                    oldPinCard.style.display = 'none';
+                    newPinCard.style.display = 'block';
+                } else {
+                    oldPinCard.style.display = 'block';
+                    newPinCard.style.display = 'none';
+                }
+            });
+
+            pinChangeButton.addEventListener('click', function () {
+                newPinCard.style.display = 'none'
+                oldPinCard.style.display = 'none'
+                pinSuccessCard.style.display = 'block'
+            })
+
+            resetButton.addEventListener('click', function() {
+                newPinCard.style.display = 'none'
+                oldPinCard.style.display = 'none'
+                pinSuccessCard.style.display = 'none'
+                resetPinCard.style.display = 'block'
+            })
+
+            verButton.addEventListener('click', function() {
+                newPinCard.style.display = 'block'
+                oldPinCard.style.display = 'none'
+                pinSuccessCard.style.display = 'none'
+                resetPinCard.style.display = 'none'
+            });
+
+            changePhoneButton.addEventListener('click', function() {
+                inputPhoneCard.style.display = 'none'
+                changePhoneCard.style.display = 'block'
+            });
+
+            phoneSuccessButton.addEventListener('click', () => {
+                inputPhoneCard.style.display = 'none'
+                changePhoneCard.style.display = 'none'
+                phoneSuccessCard.style.display = 'block'
+            })
+
+    </script>
+</body>
+
+</html>
